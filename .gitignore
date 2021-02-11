@@ -1,0 +1,7 @@
+build
+dist
+Pegasus.egg-info
+
+# test
+test
+venv

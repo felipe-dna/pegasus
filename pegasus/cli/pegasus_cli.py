@@ -9,11 +9,15 @@ def main():
 
 
 @main.command()
-@click.argument('name')
-def init(name: str):
-    log("Pegasus CLI", color="blue", figlet=True)
-    log("Welcome to Pegasus", "green")
-    log(f"Creating {name} database...", "green")
+def init():
+    log("Pegasus!", color="blue", figlet=True)
+    log("Welcome to Pegasus, the asynchronous Python ORM!", "green")
+
+
+@main.command()
+@click.option('--file', '-F')
+def migrate(file):
+    pass
 
 
 def cli():
